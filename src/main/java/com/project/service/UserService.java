@@ -21,14 +21,14 @@ public class UserService {
 
     public User saveUser(User user) {
 
-        log.info("Inside saveUser of UserService");
+        log.info("Slf4j: Inside saveUser of UserService");
         return userRepository.save(user);
 
     }
 
     public ResponseTemplateVO getUserWithDepartment(Long userId) {
 
-        log.info("Inside getUserWithDepartment of UserService");
+        log.info("Slf4j: Inside getUserWithDepartment of UserService");
         ResponseTemplateVO vo = new ResponseTemplateVO();
         User user = userRepository.findByUserId(userId);
 
