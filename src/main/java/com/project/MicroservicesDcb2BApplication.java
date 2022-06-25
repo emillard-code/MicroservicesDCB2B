@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class MicroservicesDcb2BApplication {
 
     // Differences from A version (before service registry implementation):
-    // @LoadBalanced annotation in MicroservicesDcb2Application.class
+    // @LoadBalanced annotation in MicroservicesDcb2BApplication.class
     // Changed the below url from localhost to DEPARTMENT-SERVICE
     // restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId(),Department.class);
     // Added additional details in application.yml file.
